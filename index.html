@@ -1,54 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chat</title>
+  <title>Login - Chat IFRN</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Chat IFRN</h1>
-
-  <nav>
-  <a href="chat.html">Chat</a>
-  <a href="desenvolvedores.html">Desenvolvedores</a>
-  <button onclick="logout()">Sair</button>
-  </nav>
 </header>
 
 <div class="container">
-
-  <h2>Chats</h2>
-
-  <!-- BOTÕES LADO A LADO -->
-  <div class="botoes-chat">
-    <button onclick="trocarChat('geral')">Chat Geral</button>
-
-    <button onclick="trocarChat('projeto')">Chat Equipe</button>
-  </div>
-
-  <h2 id="titulo-chat">Chat Geral</h2>
-
-  <div id="chat-box"></div>
-
-  <input type="text" id="msg" placeholder="Digite sua mensagem">
-
-  <button onclick="enviarMensagem()">Enviar</button>
-
+  <h2>Login</h2>
+  <input type="text" id="user" placeholder="Usuário"><br>
+  <input type="password" id="senha" placeholder="Senha"><br>
+  <button onclick="login()">Entrar</button>
 </div>
 
 <footer>
-  <img src="ifrn.png" width="50">
-
+  <img src="ifrn.png" width="45">
   <p>IFRN Campus Santa Cruz</p>
-
   <p>Trabalho de Programação para Internet</p>
-
   <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
-
+  <p>Desenvolvedores</p>
+  <p>Tecnologias</p>
 </footer>
 
-<script src="chat.js"></script>
-
+<script src="login.js"></script>
 </body>
 </html>
